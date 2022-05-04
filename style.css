@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: hsl(240, 38%, 20%);
+}
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.patern-1 {
+  position: absolute;
+
+  top: 81.25%;
+}
+.patern-2 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.patern {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+.tnya {
+  position: absolute;
+  top: 18%;
+  right: 15%;
+  z-index: 10;
+  transition: top 0.3s;
+}
+.tnya.active {
+  top: -100%;
+}
+.text-box {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  z-index: 20;
+  transition: top 0.3s;
+}
+.text-box.active {
+  top: 100%;
+}
+.quote {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.writer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.job {
+  color: hsl(240, 18%, 77%);
+  font-weight: 300;
+}
+
+.john {
+  position: absolute;
+  top: 18%;
+  right: -100%;
+
+  z-index: 10;
+  transition: right 0.3s;
+}
+.john.active {
+  right: 15%;
+  transition-delay: 0.3s;
+}
+
+.t-1 {
+  position: absolute;
+  top: 35%;
+  left: -100%;
+  z-index: 20;
+  transition: left 0.3s;
+}
+.t-1.active {
+  left: 20%;
+  transition-delay: 0.3s;
+}
+
+.btns {
+  position: absolute;
+  top: 80%;
+  right: 35%;
+  z-index: 30;
+  background: #fff;
+  padding: 10px 4px;
+  border-radius: 100px;
+}
+
+.arrow {
+  cursor: pointer;
+  background: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+}
+
+.bx-shd {
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow: hidden;
+    width: 100%;
+  }
+  .testamonial {
+    width: 100%;
+  }
+  .patern-2 {
+    width: 100%;
+    left: 0%;
+    top: 5%;
+  }
+  .tnya {
+    width: 80%;
+    left: 10%;
+    top: 8%;
+  }
+  .active .tnya {
+    top: -100%;
+  }
+  .john {
+    width: 80%;
+    left: 100%;
+    top: 8%;
+    transition: left 0.3s;
+  }
+  .active.john {
+    left: 10%;
+  }
+  .quote {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .text-box {
+    left: 0;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .t-1 {
+    left: -100%;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .active.t-1 {
+    left: 0;
+  }
+  br {
+    display: none;
+  }
+  .writer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btns {
+    position: absolute;
+    top: 35%;
+    right: 38%;
+  }
+  .patern-1 {
+    top: 90.75%;
+    width: 80%;
+  }
+}
